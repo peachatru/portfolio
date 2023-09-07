@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <title>Portfolio</title>
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,34 +23,104 @@
          href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
          rel="stylesheet"
        />
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     
-    
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+       crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       </head>
   <body>
-    <!-- nav bar -->
-    <!-- end nav bar -->
+  
+ 
+
     <!-- name! -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="backtoTopIcon" src="./images/up-arrow.png"/></button>
    
 
 
     <!-- projects -->
-    <section id="lavenderSection">
+    <section id="lavenderSection" style="padding-bottom:0;">
+          <!-- nav bar -->
+        <div class="container d-flex justify-content-center align-items-center" style="padding-top: 4%;">
+            <nav class="navbar navbar-expand-lg" style="max-width: 1140px; box-shadow: none;">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="d-flex justify-content-start align-items-center">
+                        <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarExample01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a id="navItem" class="nav-link px-3" href="#AboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navItem" class="nav-link px-3"   href="#WatchTime">WatchTime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  id="navItem" class="nav-link px-3" href="#PomodoroProject">Pawmodoro</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a id="navItem" class="nav-link px-3" href="#PixelPalProject">Pixel Pal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navItem" class="nav-link px-3" href="#HowlerProject">Howler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navItem" class="nav-link px-3"  href="#ContactMe">Contact Me</a>
+                        </li>
+                        </ul>
+                
+                    
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+              $('.navbar-toggler').on('click', function () {
+                $('#navbarExample01').toggleClass('show');
+              });
+            });
+          </script>
+        <!-- end nav bar -->
+
         <div class="container">
             <h1 id="name">Tiffany Truong</h1>
         </div>
     </section>
       
 
-        <section id="lavenderSection">
+        <section id="lavenderSection" style="padding-bottom:0;">
             <div class="container-lg" id="projectHighlights">
-                <div class="row row-cols-3 g-4" style="padding: 40px; padding-bottom: 20%;">
+                <div class="row row-cols-4 g-4" style="padding: 40px;">
                     <div class="col">
-                        <!-- image -->
-
-                        <img src="./images/typing-hands.jpg" alt="Hands typing on keyboard"></img>
+                        <!-- card title -->
+                        <a href="#WatchTime">
+                             <!-- image -->
+                            <img src="./images/movie-popcorn.png" alt="popcorn and movie on laptop"></img>
+                            <h3>WatchTime</h3>
+                        </a>
+                        <!-- card text -->
+                        <p id="projectText">
+                            A PWA that allows users to save movies to their watchlist, add reviews, and profile viewing. 
+                        </p>
+                    </div>
+                    <div class="col">
+                       
                         <!-- card title -->
                         <a href="#PomodoroProject">
-                            <h3>'Paw'modoro Timer</h3>
+                             <!-- image -->
+                            <img src="./images/typing-hands.jpg" alt="Hands typing on keyboard"></img>
+                            <h3>'Paw'modoro</h3>
                         </a>
                         <!-- card text -->
                         <p id="projectText">
@@ -58,10 +128,10 @@
                         </p>
                     </div>
                     <div class="col">
-                        <!-- image -->
-                        <img src="./images/mobile-laptop.jpg" alt="Laptop and Mobile device showing the same screen" />
                         <!-- card title -->
                         <a href="#PixelPalProject">
+                            <!-- image -->
+                            <img src="./images/mobile-laptop.jpg" alt="Laptop and Mobile device showing the same screen" />
                             <h3>Pixel Pal</h3>
 
                         </a>
@@ -71,10 +141,10 @@
                         </p>
                     </div>
                     <div class="col">
-                        <!-- image -->
-                        <img src="./images/laptop.jpg" alt="Laptop with text-editor open" id="flipImgHorizontally"></img>
                         <!-- card title -->
                         <a href="#HowlerProject">
+                            <!-- image -->
+                            <img src="./images/laptop.jpg" alt="Laptop with text-editor open" id="flipImgHorizontally"></img>
                             <h3>Howler</h3>
                         </a>
                         <!-- card text -->
@@ -95,13 +165,13 @@
 
                 <div>
                     
-                    <div class="container-sm" style="max-width: 960px;">
+                    <div class="container-sm" style="max-width: 960px;" id="AboutMe">
                         <h2 id="aboutMeHeader">About Me</h2>
                         <img id="pencilIcon" src="./images/pencil.png" alt="pencil scribble icon" />   
 
                         <img id="sunshineIcon" src="./images/bright-hand-drawn-interface-symbol-outline.png" alt="sunshine icon" />   
                         <div class="row">
-                            <div class="col-sm-8">
+                            <div class="col-sm-7">
                                 <p id="aboutMeParagraph">
                                     Welcome!  I'm Tiffany Truong (she/her), an aspiring Software Engineer with a passion
                                     for increasing accessibility and providing various solutions to real-world problems. 
@@ -126,7 +196,7 @@
 
                             <div class="col-sm-4" >
                                 <img id="workingIcon" src="./images/online-19.svg" alt="person working on laptop"/>
-
+                            </iframe>
                             </div>
 
                           </div>
@@ -138,6 +208,53 @@
         </section>
 
 
+         <!-- WatchTime Project -->
+         <section id="lavenderSection">
+            <div class="container">
+                <div>
+                    <div class="container-sm" style="max-width: 960px;" id="WatchTime">
+                        <h2 id="projectHeader">WatchTime</h2>
+                        
+                        <div class="row">
+                            <div class="col-sm-7" id="pomodoroCols">
+                                <p id="projectParagraph">
+                                    In a team of three, I contributed to creating the Progressive Web App that allows users to 
+                                    register or login to the app, browse various genres, save movies to their watchlist, and add reviews similar to Goodreads.
+                                </p>
+                                <br><br>
+                                <p id="projectParagraph">
+                                    The technologies used for this app are Node.js/Express, Nginx Proxy, Docker, and MySQL.
+                                    User objects such as their watchlist, reviews, etc. are stored in the MySQL database. 
+                                    We've also began implementing offline functionality through Service Workers caching all user activity done with internet connection. 
+                                </p>
+                                <br><br>
+                                <h4>Moving Forward</h4>
+                                <p id="projectParagraph">
+                                    I plan on increasing security by implementing JWT Authentication and improving on offline functionality.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-4" id="pomodoroCols">
+                                <img id="watchTimeImg" src="./images/watchTime-ss.png" alt="screenshot of watchTime Interface"/>
+
+                            </div>
+                        </div>
+                        <div class="spacing"></div>
+
+                        <div class="center">
+                            <h4>Live Demo: </h4>
+
+                            <video controls muted allowfullscreen>
+                                <source src="./images/finalProjectVideo.mp4"></source> 
+                            </video>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
         <!-- Pawmodoro Project -->
         <section id="lavenderSection">
             <div class="container">
@@ -146,34 +263,30 @@
                         <h2 id="projectHeader">'Paw'modoro Timer</h2>
                         
                         <div class="row">
-                            <div class="col-sm-8" id="pomodoroCols">
+                            <div class="col-sm-7" id="pomodoroCols">
                                 <p id="projectParagraph">
-                                    Welcome!  I'm Tiffany Truong (she/her), an aspiring Software Engineer with a passion
-                                    for increasing accessibility and providing various solutions to real-world problems. 
-                                    I recently graduated from North Carolina State University with a Bachelor of Science 
-                                    Degree in Computer Science in May 2023. 
+                                    By randomly generating various hex codes and cat facts, the users are able to have a small dose of 
+                                    serotonin before they embark on their study session! Applying the Pomodoro study method, the application
+                                    has a timer that's default value is 25 minutes, and an alarm will go off when time is up. 
                                 </p>
                                 <br><br>
                                 <p id="projectParagraph">
-                                    I enjoy working closely with teams from different backgrounds, where I can bring in
-                                    my skills in full—stack development, design patterns, and agile methodologies. I'm 
-                                    also always excited about exploring new technologies, which keeps me motivated to 
-                                    keep learning and stay updated with the latest trends in the industry. 
+                                    Compromised of HTML, CSS, and JavaScript, I extended this project to become a Google Chrome Extension where users 
+                                    can access it on the side!  
                                 </p>
                                 <br><br>
+                                <h4>Moving Forward</h4>
                                 <p id="projectParagraph">
-                                    Outside of coding, I love solving puzzles in everyday life as well. From crocheting gifts
-                                    for my loved ones or experimenting with different flavors in the kitchen, I'm always eager
-                                    to explore and find solutions!
+                                    For my next steps, I would love to flesh out a To-do application for this project, so that users are able to store 
+                                    their daily tasks and keep track of what they've completed during their work session. 
                                 </p>
                             </div>
 
                             <div class="col-sm-4" id="pomodoroCols">
                                 <img id="pomodoroImg" src="./images/pomodoro-ss.png" alt="screenshot of cat fact with pomodoro timer"/>
-
+                                
                             </div>
-                          </div>
-                       
+                        </div>       
                     </div>
                     
                 </div>
@@ -188,25 +301,18 @@
                         <h2 id="projectHeader">Pixel Pal</h2>
                         
                         <div class="row">
-                            <div class="col-sm-8">
+                            <div class="col-sm-7">
                                 <p id="projectParagraph">
-                                    Welcome!  I'm Tiffany Truong (she/her), an aspiring Software Engineer with a passion
-                                    for increasing accessibility and providing various solutions to real-world problems. 
-                                    I recently graduated from North Carolina State University with a Bachelor of Science 
-                                    Degree in Computer Science in May 2023. 
+                                    As a Progressive Web App, Pixel Pal allows users to create their artwork through pixels, adjust the grid size,
+                                    erase, undo/redo, and save their image as either a jpeg, png, or svg file. 
+
+                                    It also has a responsive interface for both IOS/Android Devices!
                                 </p>
                                 <br><br>
+                                <h4>Moving Forward</h4>
                                 <p id="projectParagraph">
-                                    I enjoy working closely with teams from different backgrounds, where I can bring in
-                                    my skills in full—stack development, design patterns, and agile methodologies. I'm 
-                                    also always excited about exploring new technologies, which keeps me motivated to 
-                                    keep learning and stay updated with the latest trends in the industry. 
-                                </p>
-                                <br><br>
-                                <p id="projectParagraph">
-                                    Outside of coding, I love solving puzzles in everyday life as well. From crocheting gifts
-                                    for my loved ones or experimenting with different flavors in the kitchen, I'm always eager
-                                    to explore and find solutions!
+                                    My next steps are to expand this project that features an AI Image Generator. The AI
+                                    will create a pixelated image when prompted with text or an image by the user.
                                 </p>
                             </div>
 
@@ -214,7 +320,16 @@
                                 <img id="pixelPalImg" src="./images/pixel-pal.png" alt="pixel art generator interface"/>
 
                             </div>
-                          </div>
+                        </div>
+                        <div class="spacing"></div>
+
+                        <div class="center">
+                            <h4>Live Demo: </h4>
+
+                            <video controls muted allowfullscreen>
+                                <source src="./images/pixelPalDemoVideo.mp4"></source> 
+                            </video>
+                        </div>
                        
                     </div>
                     
@@ -232,42 +347,124 @@
                         <h2 id="projectHeader">Howler</h2>
                         
                         <div class="row">
-                            <div class="col-sm-8">
+                            <div class="col-sm-7">
                                 <p id="projectParagraph">
-                                    Welcome!  I'm Tiffany Truong (she/her), an aspiring Software Engineer with a passion
-                                    for increasing accessibility and providing various solutions to real-world problems. 
-                                    I recently graduated from North Carolina State University with a Bachelor of Science 
-                                    Degree in Computer Science in May 2023. 
+                                    Inspired by the social media app "Twitter", the user is able to login through JWT Authentication, create 'howls', 
+                                    follow or unfollow other users, and to view their own profile. The howls created by the user
+                                    will be shown on both the homepage as well as their profile page.
                                 </p>
                                 <br><br>
                                 <p id="projectParagraph">
-                                    I enjoy working closely with teams from different backgrounds, where I can bring in
-                                    my skills in full—stack development, design patterns, and agile methodologies. I'm 
-                                    also always excited about exploring new technologies, which keeps me motivated to 
-                                    keep learning and stay updated with the latest trends in the industry. 
+                                    The technologies used for this app are Node.js/Express, Nginx Proxy, Docker, and MySQL.
+                                    
                                 </p>
                                 <br><br>
+                                <h4>Moving Forward</h4>
                                 <p id="projectParagraph">
-                                    Outside of coding, I love solving puzzles in everyday life as well. From crocheting gifts
-                                    for my loved ones or experimenting with different flavors in the kitchen, I'm always eager
-                                    to explore and find solutions!
+                                    My next steps with this project is to implement a search feature that allows the user to search for other users and follow them. 
+                                    I'd also like to implement a chat feature where users can send 'howls' or chat with their friends as well.
                                 </p>
                             </div>
 
                             <div class="col-sm-4" >
-                                <img id="pomodoroImg" src="./images/pomodoro-ss.png" alt="screenshot of cat fact with pomodoro timer"/>
+                                <img id="howlerImg" src="./images/howler-ss.png" alt="screenshot of howler interface"/>
 
                             </div>
-                          </div>
-                       
+                        </div>
+
+                        <div class="spacing"></div>
+                        <div class="center">
+                            <h4>Live Demo: </h4>
+
+                            <video controls muted allowfullscreen>
+                                <source src="./images/howlerVideo.mp4"></source> 
+                            </video>
+                        </div>
+
+
                     </div>
                     
                 </div>
             </div>
         </section>
 
-    
-   
+
+         <!-- Contact Me Section! -->
+         <section id="lavenderSection" style="padding-bottom: 80px;">
+            <div class="container">
+                <div>
+                    <div class="container-sm" style="max-width: 960px; background: #6247AA; border-radius:10px; padding-left: 40px;" id="ContactMe">
+                        <h2 id="contactMeHeader">Contact Me!</h2>
+                        
+                        <div class="row">
+                            <div class="col-sm-7">
+
+                                
+                                <p id="contactMeParagraph">
+                                    <!-- <div> Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs"> Uniconlabs </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
+                                    <img id="contactIcon" src="./images/github-128.png" alt="github logo icon"/>
+                                    <span >
+                                        <a  id="contactMeParagraph" href="https://github.com/peachatru" style="text-decoration: none;">https://github.com/peachatru</a>
+                                    </span>
+                                </p>
+                                <br>
+                                <p id="contactMeParagraph">
+                                    <!-- <div> Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs"> Uniconlabs </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
+                                    <img id="contactIcon" src="./images/email.png" alt="email icon"/>
+                                    <span >
+                                        <a  id="contactMeParagraph" href="tiffanytruong848@gmail.com" style="text-decoration: none;">tiffanytruong848@gmail.com</a>
+                                    </span>
+                                </p>
+                                <br>
+                                <p id="contactMeParagraph">
+                                    Whether you've got intriguing ideas or simply have some 
+                                    riveting questions, I'm all ears and happy to chat with you!
+                                </p>
+                            </div>
+
+                            <div class="col-sm-4" >
+                                <img id="personStandingImg" src="./images/person-standing.svg" alt="Vector image of person standing"/>
+                                <!-- <a href="https://www.freepik.com/free-vector/young-woman-standing-white_4952196.htm#&position=43&from_view=search&track=ais">Image by grmarc</a> on Freepik -->
+                            </div>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+        
+            </div>
+        </section>
+
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
 

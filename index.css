@@ -1,13 +1,74 @@
 * {
-    font-family: 'Gloock', serif;   
+    font-family: 'Gloock', serif;
     color: black;
     text-align: center;
-
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 30px;
+  }
+  
+  #myBtn:hover {
+    background-color: #7251b5;
+  }
+
+
+#backtoTopIcon {
+    position: sticky;
+    height: 50px;
+    width: auto;
+    left: 90%;
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+  }
+
+#nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Remove box shadow from the navbar */
+.navbar {
+    box-shadow: none;
+}
+
+#navItem {
+    color: black; /* Default text color */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+#navItem:hover {
+    color: #7251b5; /* Text color on hover */
+}
+
 body {
     background: #d2b7e5;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: fit-content;
 
+}
+
+html, body {
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* style="font-size: 8em;" */
@@ -17,7 +78,6 @@ body {
     text-transform: uppercase;
     height: auto;
     padding-bottom: 20px;
-    padding-top: 10%;
 }
 
 #projectHighlights {
@@ -26,11 +86,10 @@ body {
 
 img {
     position: relative;
-    height: 280px;
-    width: 280px;
+    height: 220px;
+    width: 220px;
     border-radius: 30px;
     filter: grayscale(60%);
-
 }
 
 #flipImgHorizontally {
@@ -41,7 +100,9 @@ img {
 h3 {
     padding: 20px;
 }
-
+h4 {
+    text-align: left;
+}
 #projectText {
     font-family: 'Instrument Sans', sans-serif;
     text-align: start;
@@ -65,6 +126,7 @@ main {
 
 #lavenderSection {
     background: #d2b7e5;
+    padding-bottom: 10%;
 }
 
 #aboutMeHeader {
@@ -129,6 +191,7 @@ main {
 /* GENERAL PROJECT STYLING */
 #projectHeader {
     color: black;
+
     padding-top: 10%;
     padding-bottom: 20px;
     text-align: left;
@@ -142,7 +205,14 @@ main {
     font-family: 'Instrument Sans', sans-serif;
 
 }
-
+/* PROJECT 0: WatchTime */
+#watchTimeImg {
+    filter: none;
+    height: 100%;
+    width: 120%;
+    bottom: 1%;
+    filter: none;
+}
 /* PROJECT 1: Pomodoro Timer */
 #pomodoroImg {
     filter: none;
@@ -153,16 +223,163 @@ main {
 
 #pomodoroCols {
     padding-bottom: 0px;
-    height: 500px;
+    height: 600px;
 }
 
 /* PROJECT 2: Pixel Pal */
 #pixelPalImg {
     filter: none;
     height: 100%;
-    width: 120%;
+    width: 140%;
     bottom: 1%;
     filter: none;
 }
 
+/* PROJECT 3: Howler */
+/* PROJECT 2: Pixel Pal */
+#howlerImg {
+    filter: none;
+    height: 100%;
+    width: 140%;
+    bottom: 1%;
+    filter: none;
+    border-radius: 10px;
+}
 
+div.center {
+
+    text-align: center;
+    
+    }
+
+/* #6247AA; */
+#contactMeHeader {
+    color: #d2b7e5;
+    padding-top: 4%;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 50px;
+}
+
+#contactMeParagraph {
+    text-align: left;
+    color: #d2b7e5;
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: bold;
+}
+
+#personStandingImg {
+    height: 100%; 
+}
+
+#contactIcon {
+    filter: none;
+    height: 50px;
+    width: auto;
+}
+
+video {
+    max-width: 960px;
+}
+
+
+.spacing {
+    background-color: #d2b7e5;
+    padding: 40px;
+}
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    * {
+        font-family: 'Gloock', serif;   
+        color: black;
+        text-align: center;
+    
+    }
+    body {
+        background: #d2b7e5;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+    }
+    /* Adjust styles for screens up to 768px wide */
+    #name {
+        font-size: 4em;
+        padding-top: 5%;
+    }
+    
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    video {
+        max-width: 500px;
+    }
+
+    #howlerImg {
+        height: 80%;
+        width: 180%;
+    }
+
+    #pixelPalImg {
+        width: 190%;
+        height: auto;
+    }
+
+    #pomodoroImg {
+        height: 80%;
+        bottom: 0%;
+    }
+
+    #watchTimeImg {
+        height: 70%;
+        width: auto;
+    }
+
+    #workingIcon {
+        filter: none;
+        top: 190px;
+        left: 2px;
+        width: 300px;
+        right: 70px;
+    }
+
+    #pencilIcon, #squiggleIcon, #sunshineIcon {
+        display: none;
+    }
+    
+    /* Add more responsive styles as needed */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens up to 480px wide */
+    #name {
+        font-size: 3em;
+        padding-top: 10%;
+    }
+
+    body {
+        background: #d2b7e5;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+    }
+
+    #workingIcon {
+        top: 10px;
+    }
+
+    #watchTimeImg {
+        margin-top: 0px;
+
+    }
+
+    #pixelPalImg {
+        width: 80%;
+        height: auto;
+    }
+
+    #howlerImg {
+        height: auto;
+        width: 80%;
+    }
+    /* Add more responsive styles as needed */
+}
