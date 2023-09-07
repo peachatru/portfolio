@@ -1,0 +1,168 @@
+* {
+    font-family: 'Gloock', serif;   
+    color: black;
+    text-align: center;
+
+}
+body {
+    background: #d2b7e5;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+
+/* style="font-size: 8em;" */
+#name {
+    font-size: 8em;
+    font-family: 'Gloock', serif;    
+    text-transform: uppercase;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10%;
+}
+
+#projectHighlights {
+    max-width: 1140px;
+}
+
+img {
+    position: relative;
+    height: 280px;
+    width: 280px;
+    border-radius: 30px;
+    filter: grayscale(60%);
+
+}
+
+#flipImgHorizontally {
+      /* flip horizontally */
+      transform: scaleX(-1);
+}
+
+h3 {
+    padding: 20px;
+}
+
+#projectText {
+    font-family: 'Instrument Sans', sans-serif;
+    text-align: start;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.container-lg {
+    max-width: 1140px;
+}
+
+main {
+    background: #d2b7e5;
+
+}
+#aboutMeSection {
+    background-color: #7251b5;
+    color: white;
+    padding-bottom: 20%;
+}
+
+#lavenderSection {
+    background: #d2b7e5;
+}
+
+#aboutMeHeader {
+    padding-top: 10%;
+    padding-bottom: 20px;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+}
+
+
+#aboutMeParagraph {
+    text-align: left;
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+
+}
+
+
+#sunshineIcon {
+    position: absolute;
+    margin-top: 14%;
+    left: 4%;
+    filter: none;
+    z-index: 1;
+    transform: rotate(-5deg);
+    width: 80px;
+    height: 80px;
+
+}
+
+#squiggleIcon {
+    filter: none;
+    position: absolute;
+    left: 60%;
+    margin-top: 33%;
+    z-index: 1;
+    transform: rotate(-90deg);
+    height: 100px;
+    width: 100px;
+   
+}
+
+#pencilIcon {
+    position: absolute;
+    margin-top: -8%;
+    right: 60%;
+    filter: none;
+    z-index: 1;
+    transform: rotate(-5deg);
+    width: 100px;
+    height: 100px;
+    transform: scaleX(-1);
+}
+#workingIcon {
+    filter: none;
+    top: 40px;
+    width: 600px;
+    right: 70px;
+}
+
+/* GENERAL PROJECT STYLING */
+#projectHeader {
+    color: black;
+    padding-top: 10%;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 50px;
+}
+
+
+#projectParagraph {
+    text-align: left;
+    color: black;
+    font-family: 'Instrument Sans', sans-serif;
+
+}
+
+/* PROJECT 1: Pomodoro Timer */
+#pomodoroImg {
+    filter: none;
+    width: auto;
+    height: 100%;
+    bottom: 10%;
+}
+
+#pomodoroCols {
+    padding-bottom: 0px;
+    height: 500px;
+}
+
+/* PROJECT 2: Pixel Pal */
+#pixelPalImg {
+    filter: none;
+    height: 100%;
+    width: 120%;
+    bottom: 1%;
+    filter: none;
+}
+
+
